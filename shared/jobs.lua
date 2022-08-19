@@ -8,92 +8,133 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Freelancer',
-                payment = 10
+                payment = 55
             },
         },
 	},
-	['police'] = {
-		label = 'Law Enforcement',
-        type = "leo",
+	['warehouse'] = {
+		label = 'Warehouse',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Driver',
+                payment = 241
+            },
+		},
+	},
+	['police'] = {
+		label = 'Police LSPD',
+		defaultDuty = false,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Rookie',
+                payment = 413
             },
 			['1'] = {
-                name = 'Officer',
-                payment = 75
+                name = 'Police Officer',
+                payment = 429
             },
 			['2'] = {
                 name = 'Sergeant',
-                payment = 100
+                payment = 445
             },
 			['3'] = {
-                name = 'Lieutenant',
-                payment = 125
+                name = 'Detective',
+                payment = 461
             },
-			['4'] = {
-                name = 'Chief',
+            ['4'] = {
+                name = 'Lieutenant',
+                payment = 477
+            },
+            ['5'] = {
+                name = 'Captain',
+                payment = 493
+            },
+			['6'] = {
+                name = 'Commander',
+                payment = 509
+            },
+			['7'] = {
+                name = 'Deputy Chief',
+                isboss = true,
+                payment = 525
+            },
+			['8'] = {
+                name = 'Assistant Chief',
+                isboss = true,
+                payment = 541
+            },
+			['9'] = {
+                name = 'Chief of Police',
 				isboss = true,
-                payment = 150
+                payment = 557
             },
         },
 	},
 	['ambulance'] = {
 		label = 'EMS',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Trainee of EMS',
+                payment = 503
             },
 			['1'] = {
-                name = 'Paramedic',
-                payment = 75
+                name = 'Emergency Medical Responder (EMR)',
+                payment = 519
             },
 			['2'] = {
-                name = 'Doctor',
-                payment = 100
+                name = 'Emergency Medical Technician (EMT)',
+                payment = 525
             },
 			['3'] = {
-                name = 'Surgeon',
-                payment = 125
+                name = 'Paramedic',
+                payment = 531
             },
 			['4'] = {
+                name = 'Senior Paramedic',
+                payment = 547
+            },
+			['5'] = {
+                name = 'Assistant Chief',
+                --isboss = true,
+                payment = 563
+            },
+			['6'] = {
                 name = 'Chief',
 				isboss = true,
-                payment = 150
+                payment = 579
             },
         },
 	},
 	['realestate'] = {
 		label = 'Real Estate',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Realestate Seller',
+                payment = 251
             },
 			['1'] = {
-                name = 'House Sales',
-                payment = 75
+                name = 'Realestate Broker',
+                payment = 277
             },
 			['2'] = {
-                name = 'Business Sales',
-                payment = 100
+                name = 'Realestate Manager',
+                payment = 283
             },
 			['3'] = {
-                name = 'Broker',
-                payment = 125
+                name = 'Vice Realestate CEO',
+                payment = 309
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Realestate CEO',
 				isboss = true,
-                payment = 150
+                payment = 325
             },
         },
 	},
@@ -104,24 +145,24 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Recruit',
-                payment = 50
+                payment = 241
             },
 			['1'] = {
                 name = 'Driver',
-                payment = 75
+                payment = 257
             },
 			['2'] = {
                 name = 'Event Driver',
-                payment = 100
+                payment = 273
             },
 			['3'] = {
                 name = 'Sales',
-                payment = 125
+                payment = 289
             },
 			['4'] = {
                 name = 'Manager',
 				isboss = true,
-                payment = 150
+                payment = 305
             },
         },
 	},
@@ -132,74 +173,91 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Driver',
-                payment = 50
+                payment = 241
             },
 		},
 	},
 	['cardealer'] = {
 		label = 'Vehicle Dealer',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Sales Representative Car Dealer',
+                payment = 241
             },
 			['1'] = {
-                name = 'Showroom Sales',
-                payment = 75
+                name = 'Director of Sales Car Dealer',
+                payment = 257
             },
 			['2'] = {
-                name = 'Business Sales',
-                payment = 100
+                name = 'Showroom Manager Car Dealer',
+                payment = 273
             },
 			['3'] = {
-                name = 'Finance',
-                payment = 125
+                name = 'Vice CEO Car Dealer',
+                payment = 289
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'CEO car dealer',
 				isboss = true,
-                payment = 150
+                payment = 305
             },
         },
 	},
 	['mechanic'] = {
 		label = 'Mechanic',
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Apprentice Car Mechanic',
+                payment = 241
             },
 			['1'] = {
-                name = 'Novice',
-                payment = 75
+                name = 'Certified Car Mechanic',
+                payment = 257
             },
 			['2'] = {
-                name = 'Experienced',
-                payment = 100
+                name = 'Professional Car Mechanic',
+                payment = 273
             },
 			['3'] = {
-                name = 'Advanced',
-                payment = 125
+                name = 'Vice CEO Car Mechanic',
+                payment = 289
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'CEO Car Mechanic',
 				isboss = true,
-                payment = 150
+                payment = 305
             },
         },
 	},
 	['judge'] = {
-		label = 'Honorary',
+		label = 'Judge of Justice',
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Judge',
-                payment = 100
+                name = 'Apprentice Judge',
+                payment = 264
+            },
+			['1'] = {
+				name = 'General Judge',
+                payment = 284
+            },
+			['2'] = {
+                name = 'Expert Judge',
+                payment = 299
+            },
+			['3'] = {
+                name = 'Professional judge',
+                payment = 316
+            },
+			['4'] = {
+                name = 'President of a Court',
+				isboss = true,
+                payment = 333
             },
         },
 	},
@@ -209,8 +267,25 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Associate',
-                payment = 50
+                name = 'Apprentice lawyer',
+                payment = 241
+            },
+			['1'] = {
+				name = 'General lawyer',
+                payment = 257
+            },
+			['2'] = {
+                name = 'Expert lawyer',
+                payment = 273
+            },
+			['3'] = {
+                name = 'professional lawyer',
+                payment = 289
+            },
+			['4'] = {
+                name = 'Owners of a law firm',
+				isboss = true,
+                payment = 305
             },
         },
 	},
@@ -221,7 +296,7 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Journalist',
-                payment = 50
+                payment = 241
             },
         },
 	},
@@ -232,7 +307,7 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Driver',
-                payment = 50
+                payment = 241
             },
         },
 	},
@@ -243,7 +318,7 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Driver',
-                payment = 50
+                payment = 241
             },
         },
 	},
@@ -254,7 +329,7 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Collector',
-                payment = 50
+                payment = 241
             },
         },
 	},
@@ -265,7 +340,7 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Picker',
-                payment = 50
+                payment = 241
             },
         },
 	},
@@ -276,8 +351,159 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Sales',
-                payment = 50
+                payment = 241
             },
+        },
+	},
+	['forklift'] = {
+		label = 'LS-Port Forklift',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'Forklift Driver',
+                payment = 241
+            },
+        },
+	},	
+	['security'] = {
+		label = 'Brinks',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'Brinks Driver',
+                payment = 241
+            },
+        },
+	},
+	['planepilot'] = {
+		label = 'AirCargo',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+			['0'] = {
+				name = 'Pilot',
+				payment = 241
+			},
+		},
+	},
+	['pilot'] = {
+		label = 'Airport Company',
+		defaultDuty = false,
+		grades = {
+            ['0'] = {
+                name = 'Akademi Pilot Airport Company',
+                payment = 241
+            },
+			['1'] = {
+                name = 'Pilot Airport Company',
+                payment = 257
+            },
+			['2'] = {
+                name = 'EXPERT pilot Airport Company',
+                payment = 273
+            },
+			['3'] = {
+                name = 'Vice CEO Airport Company',
+                payment = 289
+            },
+			['4'] = {
+                name = 'CEO Airport Company',
+				isboss = true,
+                payment = 305
+            },
+        },
+	},
+	['dj'] = {
+		label = 'dj',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'dj club',
+                payment = 241
+            },
+        },
+	},
+	['tastyeats'] = {
+		label = 'Tastyeats',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'Pilot for hire',
+                payment = 241
+            },
+        },
+	},
+	['fbi'] = {
+        label = 'Federal Investigation Bureau',
+        defaultDuty = true,
+        grades = {
+            ['0'] = {
+                name = 'Trainee',
+                payment = 264
+            },
+            ['1'] = {
+                name = 'Agent',
+                payment = 283
+            },
+            ['2'] = {
+                name = 'Field Agent',
+                payment = 300
+            },
+            ['3'] = {
+                name = 'Special Agent',
+                payment = 318
+            },
+            ['4'] = {
+                name = 'Director',
+                isboss = true,
+                payment = 336
+            },
+        },
+    },
+	['burgershot'] = {
+		label = 'BurgerShot',
+		defaultDuty = false,
+		grades = {
+            ['0'] = { 
+                name = 'Trainee', 
+                payment = 241 
+            },
+			['1'] = { 
+                name = 'Regular worker', 
+                payment = 257 
+            },
+			['2'] = { 
+                name = 'Branch Manager', 
+                payment = 273 
+            },
+			['3'] = { 
+                name = 'Vice CEO Burgershot', 
+                payment = 289 
+            },
+			['4'] = { 
+                name = 'CEO Burgershot', 
+                isboss = true, 
+                payment = 305 
+            },
+        },
+	},	
+	['gundealer'] = {
+		label = 'Gundealer',
+		defaultDuty = true,
+		grades = {
+            ['0'] = { name = 'Soldier Gundealer', isboss = true, payment = 241 },
+			['1'] = { name = 'Boss Gundealer', isboss = true, payment = 257 },
+        },
+	},					
+	['vanilla'] = {
+		label = 'Vanilla Unicorn',
+		defaultDuty = false,
+		grades = {
+            ['0'] = { name = 'Berman Apprentice Vanilla Club', payment = 241 },
+			['1'] = { name = 'Club Security Guard Vanilla Club', payment = 257 },
+			['2'] = { name = 'Professional Barman Vanilla Club', payment = 273 },
+			['3'] = { name = 'Vice CEO Vanilla Club', payment = 289 },
+			['4'] = { name = 'CEO Vanilla Club', isboss = true, payment = 305 },
         },
 	},
 }

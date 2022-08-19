@@ -252,28 +252,15 @@ end
 -- Items
 
 function QBCore.Functions.CreateUseableItem(item, cb)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-
-    if GetResourceState('qb-inventory') ~= 'started' then
-        CreateThread(function()
-            repeat
-                Wait(1000)
-            until GetResourceState('qb-inventory') == 'started'
-            exports['qb-inventory']:CreateUsableItem(item, cb)
-        end)
-    else
-        exports['qb-inventory']:CreateUsableItem(item, cb)
-    end
+    QBCore.UseableItems[item] = cb
 end
 
 function QBCore.Functions.CanUseItem(item)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    return exports['qb-inventory']:GetUsableItem(item)
+    return QBCore.UseableItems[item]
 end
 
 function QBCore.Functions.UseItem(source, item)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    exports['qb-inventory']:UseItem(source, item)
+    QBCore.UseableItems[item.name](source, item)
 end
 
 -- Kick Player
